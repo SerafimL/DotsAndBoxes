@@ -1,0 +1,103 @@
+var Lines_h = [];
+const line_h_a1 = document.querySelector('rect');
+console.log(line_h_a1);
+
+
+
+
+function position(element){
+    tablemaker = '<div> <h1>Jogo do Quadrado</h1><svg version="1.1" baseProfile="full" width="350" height="350" xmlns="http://www.w3.org/2000/svg">';
+    for(f=0;f<10;f++){
+        
+    for(i=0;i<10;i++){
+        j =(i+1)*30;
+        k =(f+1)*30;
+    
+        
+        if(f<=8){
+
+            tablemaker= tablemaker+'<rect x="'+k+'" y="'+(j-2)+'" width="30" height="4" fill="white" onclick="clickline(this)"/>';
+        }
+        if(i<=8){
+
+            tablemaker= tablemaker+'<rect x="'+(k-2)+'" y="'+j+'" width="4" height="30" fill="white" onclick="clickline(this)"/>';
+        }
+       /* tablemaker= tablemaker+'<circle cx="'+k+'" cy="'+j+'" r="3" fill="black" />';
+    }
+    }  
+    tablemaker= tablemaker+'</svg></div>';
+    document.getElementById("table").innerHTML = tablemaker;
+    
+    
+ console.log(document.getElementById("table").innerHTML);
+
+
+ var selRectangle = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            
+            selRectangle.setAttribute('x', 90);
+            selRectangle.setAttribute('y', 28);
+            selRectangle.setAttribute('width', 30);
+            selRectangle.setAttribute('height', 4);
+            selRectangle.setAttribute('fill', 'Blue');
+            selRectangle.setAttribute('class', 'line_h');
+
+            gameboard.appendChild(selRectangle);
+
+
+
+              var tablemaker = '';
+                /*for(j=1;j<10;j++){
+                    for(i=1;i<10;i++){
+                        tablemaker= tablemaker+'<rect x="'+(i*30)+'" y="'+(j*30)+'" width="4" height="30" fill="rgb(19, 18, 18)" id="'+i+''+j+'" />';
+                    var selRectangle = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+                
+                    selRectangle.setAttribute('x', (i*30));
+                    selRectangle.setAttribute('y', (j*30));
+                    selRectangle.setAttribute('width', 30);
+                    selRectangle.setAttribute('height', 30);
+                    selRectangle.setAttribute('fill', color);
+                    selRectangle.setAttribute('class', 'square');
+
+                    gameboard.appendChild(selRectangle);
+                    
+                    console.log(selRectangle);
+                    
+                    }
+                }
+                console.log(tablemaker);*/
+
+            var tablemaker_h = '';
+            var tablemaker_v = '';
+            var tablemaker_p = '';
+            for(f=1;f<11;f++){
+        
+                for(i=1;i<11;i++){
+                    j =i*30;
+                    k =f*30;
+                
+                    
+                    if(f<=9){
+            
+                        tablemaker_h= tablemaker_h+'<rect id="'+f+'x'+i+'y'+'h" x="'+k+'" y="'+j+'" width="30" height="4" fill="black" onclick="clickline(this)"/>';
+                    }
+                    if(i<=9){
+            
+                        tablemaker_v= tablemaker_v+'<rect id="'+f+'x'+i+'y'+'v" x="'+k+'" y="'+j+'" width="4" height="30" fill="black" onclick="clickline(this)"/>';
+                    }
+                    tablemaker_p= tablemaker_p+'<circle cx="'+(k+2)+'" cy="'+(j+2)+'" r="3" fill="white" />';
+                }
+            }
+            console.log(tablemaker_h);
+            console.log(tablemaker_v);
+            console.log(tablemaker_p);
+
+                 var tablemaker_c = '';
+            for(f=1;f<10;f++){
+        
+                for(i=1;i<10;i++){
+                    j =i*30;
+                    k =f*30;
+                    tablemaker_c= tablemaker_c+'<rect id="'+f+''+i+'" x="'+(k+2)+'" y="'+(j+2)+'" width="30" height="30" fill="black"/>';
+                }
+            }
+            console.log(tablemaker_c);

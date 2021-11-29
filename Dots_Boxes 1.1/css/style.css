@@ -1,0 +1,42 @@
+#Login{
+    margin-right: 30px;
+    size: 10px;
+}
+#Login:hover{
+    background-color: rgb(39, 37, 46);
+    border-radius: 10%;
+}
+#setings{
+    margin-right: 10px;   
+}
+h4{
+    
+    margin-left: 20px;
+}
+.navbar{
+    padding-top: 15px;
+}
+.nav-link:hover{
+    background-color: rgb(49, 46, 58);
+    
+}
+#sidebar{
+    float: left;
+    width: 50%;
+    padding: 10px;
+  
+}
+#table{
+    padding: 0;
+    background-color: black;
+    border-radius:20px 
+}
+.card{
+    background-color: rgb(19, 18, 18);
+    padding: 0;
+    margin: 30px;
+    float: left;
+}
+#TableDiv{
+    
+}

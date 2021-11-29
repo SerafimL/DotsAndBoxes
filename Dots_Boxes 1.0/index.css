@@ -1,0 +1,47 @@
+h1 {
+    max-width: 50%;
+    color: red;
+    
+   
+}
+#table {
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+    float: left;
+    margin-left: 10px;
+    padding-left: 10px;
+
+}
+.line:hover {
+   
+    fill: rgb(177, 176, 176);
+}
+
+#scoreBoard{
+    float:right;
+    position: sticky;
+    align-items: center;
+    
+}
+
+#Score{
+    
+    position: sticky;
+    align-items: center;
+    
+}
+
+
+#btn1{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select:initial ; /* Internet Explorer/Edge */
+            user-select:none ;
+}
+#newGameSqr:hoover, #newGameText:hoover {
+    fill: 'blue';
+    background-color: black;
+}
